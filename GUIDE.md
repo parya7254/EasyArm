@@ -99,5 +99,6 @@ Now lastly, we have to wire the MPU-6500 gyroscope to the transmitter. Here is a
 The MPU-6500 supports the I2C protocol which only needs 2 pins for data. So, we only have to connect the power pins and the I2C pins (SCL and SDA) to get it to work. Connect the SCL pin to GPIO5 and SDA to GPIO4.
 
 ![Wired MPU-6050](image-10.png)
+![Finshed Schematic](image-11.png)
 
 Now we are finished with wiring and ready to move on to designing the PCB!
