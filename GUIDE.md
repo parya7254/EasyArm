@@ -61,4 +61,4 @@ And for the nRF24L01+, search nRF24L01 (without the +) when you go to add symbol
 
 Lets also name our parts, to do this double click the "A_" on the Pico you want to be the transmitter, a popup window should appear, type in "Transmitter" and the reference name will be changed like so:
 
-
+![alt text](image.png)
