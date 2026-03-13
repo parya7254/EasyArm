@@ -61,4 +61,43 @@ And for the nRF24L01+, search nRF24L01 (without the +) when you go to add symbol
 
 Lets also name our parts, to do this double click the "A_" on the Pico you want to be the transmitter, a popup window should appear, type in "Transmitter" and the reference name will be changed like so:
 
-![alt text](image.png)
+![Reference Example](image-1.png)
+
+Do the same for the receiver Pico and also the transmitter/receiver wireless modules (nRF24L01).
+
+Don't forget to name your servos as well!
+
+Here is how it looked like for me: 
+
+![Current Schematic](image-3.png)
+
+# Wiring the Schematic
+Lets add power symbols to the schematic by pressing P. Power symbols will redirect all of the pins connected to that symbol to one power pin. I added a 5v and GND power symbol like so (they are highlighted):
+
+![Power Symbols](image-6.png)
+
+Now we will wire up the things in the schematic. This will tell us which pin is connected to where on the PCB. Lets start wiring the servos to the receiver board. You could either press W to wire or just click on the small circles at the pins and then a green wire should appear and wou can click to fix a point of the green wire at that location.  
+
+![Wiring Servo](image-4.png)
+
+Here is a picture of the servo pinout to help: 
+
+![Servo Pinout](image-5.png)
+
+Lets wire servo 1 to GPIO14 and servo 2 to GPIO15 of the receiver Pico:
+
+![Wired Servos](image-7.png)
+
+Now we will wire the nRF24L01+ Module which uses a SPI communication protocol. The defaust SPI0 Pins of our Pico are:  GPIO19 (MOSI/TX), GPIO18 (SCK), GPIO17 (CS) and GPIO 16 (MISO/RX). Connect CE to GPIO 20 and place a no connect flag on IRQ by pressing Q to place it. Use the same pinout while connecting the other nRF24L01+ module to its respective Pico.
+
+![Wired nRF24L01](image-8.png)
+
+Now lastly, we have to wire the MPU-6500 gyroscope to the transmitter. Here is a helpful pinout diagram:
+
+![MPU-6500 Pinout](image-9.png)
+
+The MPU-6500 supports the I2C protocol which only needs 2 pins for data. So, we only have to connect the power pins and the I2C pins (SCL and SDA) to get it to work. Connect the SCL pin to GPIO5 and SDA to GPIO4.
+
+![Wired MPU-6050](image-10.png)
+
+Now we are finished with wiring and ready to move on to designing the PCB!
