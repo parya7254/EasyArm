@@ -47,7 +47,7 @@ Now, what we want to do is add symbols. Symbols are the modules that you would c
 <img width="3507" height="2480" alt="image" src="https://github.com/user-attachments/assets/cb3dc639-3760-4ef2-b1d6-af3c1d99f14a" />
 
 Now we will add the gyroscope module (MPU-6500) to the schematic.
-If we check for the MPU-6500 in the symbools, we will only see the chip of the PCB, but we have a module. The difference is that modules have the tiny chip soldered to it already and can be easily connected with header pins. Now back to KiCad, we do not see that there is a MPU-6500 module so what we will do is just use a 01x10 pin connector. We will add another symbol, select add symbols (or press A) and then search up 01x10 and select Conn_01x10 in the Connector_Generic area and then lpace it down somewhere.
+If we check for the MPU-6500 in the symbools, we will only see the chip of the PCB, but we have a module. The difference is that modules have the tiny chip soldered to it already and can be easily connected with header pins. Now back to KiCad, we do not see that there is a MPU-6500 module so what we will do is just use a 01x10 pin connector. We will add another symbol, select add symbols (or press A) and then search up 01x10 and select Conn_01x10 in the Connector_Generic area and then place it down somewhere.
 
 <img width="1576" height="746" alt="image" src="https://github.com/user-attachments/assets/839163bb-0cee-43dd-bf06-531e05578574" />
 
@@ -58,5 +58,7 @@ Now do the same but add 2 01x03 connectors for the Servos:
 And for the nRF24L01+, search nRF24L01 (without the +) when you go to add symbols and select the NRF24L01_Breakout symbol and place it somewhere and also add another one since we will use 2 for this project.
 
 <img width="1569" height="737" alt="image" src="https://github.com/user-attachments/assets/fc07f7bc-c3d2-4370-9471-67ce3d8f83ea" />
+
+Lets also name our parts, to do this double click the "A_" on the Pico you want to be the transmitter, a popup window should appear, type in "Transmitter" and the reference name will be changed like so:
 
 
