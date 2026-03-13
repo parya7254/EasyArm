@@ -101,4 +101,18 @@ The MPU-6500 supports the I2C protocol which only needs 2 pins for data. So, we 
 ![Wired MPU-6050](image-10.png)
 ![Finshed Schematic](image-11.png)
 
-Now we are finished with wiring and ready to move on to designing the PCB!
+Now this is the last thing you have to do before moving on to designing the PCB, you have to assign the footprint to the header pins. A footprint is an identity an object has on an PCB, in our case, it will be the holes for the header pins. To do this click on the assign footprints button on your toolbar at the top: 
+
+![Assign Footprints Button](image-12.png)
+
+After that if you get a popup that says "Annotate Schematic", then press the annotate button and after it is done, press close. If you do not get this popup, you are fine. Your assign footprints window should be like this:
+
+![Assign Footprints Window](image-13.png)
+
+And then for the Conn_01x10, search, "Connector_PinHeader_2.54mm:Pinheader_1x10_P2.54mm_Vertical" and select it (do not select the SMD one, just the normal one), for the 1x3 conn, look up, "Connector_PinHeader_2.54mm:Pinheader_1x03_P2.54mm_Vertical" and select that. It should look like this at the end:
+
+![Assigned Footpritns](image-14.png)
+
+Then click, "Apply, Save Schematic, & Continue"
+
+Now we are finished with the schematic and ready to move on to designing the PCB!
