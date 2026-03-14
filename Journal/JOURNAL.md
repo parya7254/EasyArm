@@ -11,6 +11,6 @@ I also started typing the guide and got the part where you create the schematic 
 START TIME: 2:00 PM
 END TIME: 6:00 PM
 
-
+![Finished Schematic](image.png)
 
 Today, I took some more time to work on the schematic part of the guide and my schematic and finished both! I connected everything together and also used a diagram from pico.pinout.xyz to help me wire the things up.
