@@ -116,3 +116,50 @@ And then for the Conn_01x10, search, "Connector_PinHeader_2.54mm:Pinheader_1x10_
 Then click, "Apply, Save Schematic, & Continue"
 
 Now we are finished with the schematic and ready to move on to designing the PCB!
+
+# Designing the PCB
+
+We will first open our PCB, to do this, press the PCB button in your KiCad toolbar, it should look like this: 
+
+![PCB Button in Schematic Toolbar](image-15.png)
+
+Now once we are in out PCB editor, we will import everything from our schematic, click this button in your toolbar:
+
+![Import From Schematic Button](image-16.png)
+
+And after clicking it, press the "Update PCB" button and then close the popup. What we will be doing is we are going to create one PCB and that PCB will have 2 sides: once side where the receiver parts will be soldered, and another side where the transmitter side will be soldered. When you order a PCB, the minimun quantity will most likely be more that 1 so we can solder only the transmitter parts to the transmitter and only the receiver parts to the receiver side of the PCB. So make sure that you move your parts and seperate them. 
+
+Before you start moving your parts, select te Edge.Cuts layer (on your right side) and then click the square icon and then make a square. After you make a square, select it and then press E. You will get a popup, Select "Corner and Size" and set the size you want your PCB to be. The maximum size for your PCB is 100x100mm. 
+
+![Edge.Cuts Layer](image-19.png)
+![Create Square Button](image-20.png)
+
+After you make the size of your board, start arranging your components into an order you would like, but I recommend arranging your transmitter components on one size, and the receiver components on the other. Make sure that the Pico's "USB Cable Keep Out" areas are outside the board outline like so:
+
+![Example of USB Keep out area outside the PCB outline.](image-17.png)
+
+
+* You can press R to rotate an object
+
+This is what it looked like after I finished arranging my parts:
+
+![Finished PCB Layout](image-18.png)
+
+Dont forget to brand your PCB!! To do this, select the F.Silkscreen layer and then select the text button: 
+
+![Insert Text Button](image-21.png)
+
+After selecting it, click anywhere in your PCB editor area and you should get a popup. You can also change the width, height, and font of the text in the popup you get. And after finishing with the popup, place it somewhere in your PCB
+
+# Recommended Step:
+I recommend dividing the transmitter and receiver side of your PCB to avoid confusion while soldering parts. To do this, select the F.Silkscreen layer and then click the line tool:
+
+![Line Tool Button](image-22.png)
+
+Then click the points of where you want your line to be and then press Escape if your line tool does not stop placing lines. Then, if you would like, add text indicating which side is the transmitter and which side is the receiver. This should be the end result:
+
+![Finished PCB](image-23.png)
+
+Congrats on finishing your PCB!!
+
+# Code
