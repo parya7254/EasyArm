@@ -158,8 +158,14 @@ I recommend dividing the transmitter and receiver side of your PCB to avoid conf
 
 Then click the points of where you want your line to be and then press Escape if your line tool does not stop placing lines. Then, if you would like, add text indicating which side is the transmitter and which side is the receiver. This should be the end result:
 
-![Finished PCB](image-23.png)
+![Finished PCB Placement](image-23.png)
 
-Congrats on finishing your PCB!!
+Now we will have to connect the things to each other in our PCB, the blue lines you currently see are called ratlines, they incdicate where a pad in a PCB is connected and shows that the pad is not connected. We will first wire up the receiver side of the PCB. First go to your servo and then select a hole (or pad) you would like to connect first. Then press X to begin wiring (or select the wiring tool):
 
-# Case
+![Wiring Tool](image-24.png)
+
+Then the rest of the PCB should go dark other than the things that need to be connected. connect it to where the pad lights up (IMPORTANT: Do not connect the pad to the other part of the PCB (dont connect something in the receiver side to something that lights up in the transmitter side) or your PCB will not work properly). You can click to fix a point of the wire to the PCB just like the schematic. You do not need to wire the pads of the Pico to each other even if they light up. This is what it looked like when I connected the GND of the servo to the GND of the Pico:
+
+![GND of Servo Connected to GND of Pico](image-25.png)
+
+* IMPORTANT TIP: you can press V while you route to place a via. A via transfers a wire from the front side of the PCB to the other side like so:
