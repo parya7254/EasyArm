@@ -162,4 +162,4 @@ Then click the points of where you want your line to be and then press Escape if
 
 Congrats on finishing your PCB!!
 
-# Code
+# Case
