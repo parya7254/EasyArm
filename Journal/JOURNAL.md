@@ -14,3 +14,11 @@ END TIME: 6:00 PM
 ![Finished Schematic](image.png)
 
 Today, I took some more time to work on the schematic part of the guide and my schematic and finished both! I connected everything together and also used a diagram from pico.pinout.xyz to help me wire the things up.
+
+# (3/19/2026) Finished Routing PCB!!
+START TIME: 12:07 PM
+END TIME: 5:21 PM
+
+![Routed PCB](image-1.png)
+
+Today, I worked on the guide some more while I routed the PCB. I managed to finish both the routing part of the guide and the routing of the PCB. I will now have to make the PCB space themed and I plan so by using stars on the PCB silkscreen.
