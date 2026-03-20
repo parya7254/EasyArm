@@ -183,3 +183,20 @@ Then the rest of the PCB should go dark other than the things that need to be co
 This is what my routed PCB looked like:
 
 ![Routed PCB](image-28.png)
+
+# Making the PCB Space themed
+Since the current Kit-Lab theme is space, we will make our PCB space themed! To do this, find a space-themed picture and download it, for example, I chose this one:
+
+![Space Theme Picture Example](image-29.png)
+
+Now, go to your KiCad main menu, and select the Image Converter:
+
+![KiCad Image Converter Tool](image-30.png)
+
+And then select the "Load Image Source" button and them insert the image you downloaded. After that, select the "Export to Clipboard" button and then simply go back into your PCB to paste the image! You can also change the ourput size before you export if your image is too large/small (I recommend leaving the Lock height / width ratio option on). Here's mine for example:
+
+![PCB With Space Picture](image-31.png)
+
+Make sure you add more than 1!
+
+Now we are two thirds of the way done! We just now have to make the case!
