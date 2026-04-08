@@ -199,4 +199,56 @@ And then select the "Load Image Source" button and them insert the image you dow
 
 Make sure you add more than 1!
 
-Now we are two thirds of the way done! We just now have to make the case!
+Now we are one half of the way done! We just now have to make the case and do the arm's firmware!
+
+# Designing the Case
+
+Now that we have finished with the PCB part of this project, we will now start designing the case for our arm! The arm will need a case so that it actually can move pieces.
+To start off, go download Fusion360 since that is what we will be using for this proejct's case. You can use other CAD software but it might be harder since the controls and functions might be different.
+
+We will first create a new project, to do this, just click the + button on your top toolbar and you should see a menu pop up. Select "Part Design" and then a new design tab should be there.
+
+Next, press the Create Sketch button on the Solid tab, which looks like this:
+
+![Create Sketch Button](image-32.png)
+
+After you press that, 3 squares should pop up, select the square on the side you want it to be on, I usually select the square on the bottom and with the x and y axis. Now, you should see a sketch palette pop up. 
+Press R to start creating a rectangle and then make a random rectangle. This will soon be the base of our Transmitter. Now we will set the length of our sides using the Sketch Dimension tool which looks like this:
+
+![Sketch Dimension tool](image-33.png) 
+
+You also could just press D for it as well. After we select the tool, we will select one side and set it to the width of our PCB and increase it by 1 mm. (my PCB is 100mm so I will set it to 101mm) and also do the same with the height of the PCB.
+
+![Rectangle with Defined Dimensions](image-34.png)
+
+Also create another rectangle that is 20mm bigger on each side on top of the first rectangle.:
+
+![Bigger Rectangle on top of Smaller Rectangle](image-36.png)
+
+And then use the Sketch dimension tool and then select one edge of the smaller rectangle and then select the corresponding edge of the bigger rectangle and then set the value to 10mm. Do the same for the other edge and you only need to do this once for the horizontal edge and once for the vertical edge like so:
+
+![Smaller Rectangle Spaced 10mm per one Horizontal and Vertical Side to Larger Rectangle](image-37.png)
+
+Now click the "Finish Sketch" button on the top right corner:
+
+![Finish Sketch Button](image-35.png)
+ 
+And now there should be two blue retangles. We will now extrude the squares. To do this, select the extrude to or just press E (it should be next to the create sketch button):
+
+![Extrude Tool Button](image-38.png)
+
+And then select the smaller interior square and then set the distance to 2:
+
+![Extrude Window Menu](image-39.png)
+
+Then you will see the outer rectangle go away so select the sketches folder in the browser and then open it's dropdown and then press the eye button on Sketch 1:
+
+![Browser Window with Sketch 1 Visible](image-40.png)
+
+![Visible Bigger Rectangle](image-41.png)
+
+Now select the outer rectangle and extrude it by 12mm and it should finally look like this:
+
+![Extruded Larger Rectangle of Case](image-42.png)
+
+And now that we have created the case for the transmitter, we will now add a hole for the USB port of the Pico.
